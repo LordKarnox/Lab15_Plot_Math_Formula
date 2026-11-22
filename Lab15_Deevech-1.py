@@ -22,3 +22,11 @@ for degree in range(0, 1801):
     radians = math.radians(degree)
     x_values.append(radians)
     y_values.append(math.sin(radians))
+
+# Plot the data with a title and axis labels.
+plt.style.use('seaborn-v0_8')
+fig, ax = plt.subplots()
+ax.plot(x_values, y_values, linewidth=2)
+ax.set_title("Sine Wave: y = sin(x)", fontsize=18)
+ax.set_xlabel("x (radians)", fontsize=12)
+ax.set_ylabel("sin(x)", fontsize=12)
