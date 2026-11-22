@@ -30,3 +30,6 @@ ax.plot(x_values, y_values, linewidth=2)
 ax.set_title("Sine Wave: y = sin(x)", fontsize=18)
 ax.set_xlabel("x (radians)", fontsize=12)
 ax.set_ylabel("sin(x)", fontsize=12)
+
+# Save the finished plot to an image file in the project folder.
+plt.savefig('sine_wave.png', bbox_inches='tight')
